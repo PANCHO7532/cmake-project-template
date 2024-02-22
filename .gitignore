@@ -1,0 +1,31 @@
+# Ignore binaries
+app/*/bin/*
+
+# Ignore solution and modern project files
+.vs/
+.vscode/
+Backup/
+Backup*/
+Debug/
+Debug*/
+Release/
+Release*/
+*.sln
+*.sdf
+*.suo
+*.vcproj
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+UpgradeLog*.htm
+*.cbp
+*.layout
+
+# Ignore common CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore private tools, not intended for public use *yet*
+private/
