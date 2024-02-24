@@ -22,13 +22,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELWITHDEBINFO "${CMAKE_RUNTIME_OUTPUT_DIRECT
 # Compiler flags
 if(MSVC)
     # For Windows MSVC
-    set(CMAKE_C_FLAGS                   "${CMAKE_C_FLAGS} /Wall /wd4710 /wd4820 /wd4514 /wd4986 /wd4530 /DWIN32 /D_WINDOWS")
-    set(CMAKE_CXX_FLAGS                 "${CMAKE_CXX_FLAGS} /Wall /wd4710 /wd4820 /wd4514 /wd4986 /wd4530 /DWIN32 /D_WINDOWS")
-    set(CMAKE_C_FLAGS_DEBUG             "/Od /Ob0 /Zi /DDEBUG")
+    set(CMAKE_C_FLAGS                   "${CMAKE_C_FLAGS} /W4 /DWIN32 /D_WIN32 /D_WINDOWS")
+    set(CMAKE_CXX_FLAGS                 "${CMAKE_CXX_FLAGS} /W4 /DWIN32 /D_WIN32 /D_WINDOWS")
+    set(CMAKE_C_FLAGS_DEBUG             "/Od /Ob0 /Zi /DDEBUG /D_DEBUG")
     set(CMAKE_C_FLAGS_RELEASE           "/O2 /DNDEBUG")
     set(CMAKE_C_FLAGS_MINSIZEREL        "/O1 /Ob1 /DNDEBUG")
     set(CMAKE_C_FLAGS_RELWITHDEBINFO    "/O2 /Ob1 /Zi /DNDEBUG")
-    set(CMAKE_CXX_FLAGS_DEBUG           "/Od /Ob0 /Zi /DDEBUG")
+    set(CMAKE_CXX_FLAGS_DEBUG           "/Od /Ob0 /Zi /DDEBUG /D_DEBUG")
     set(CMAKE_CXX_FLAGS_RELEASE         "/O2 /DNDEBUG")
     set(CMAKE_CXX_FLAGS_MINSIZEREL      "/O1 /Ob1 /DNDEBUG")
     set(CMAKE_CXX_FLAGS_RELWITHDEBINFO  "/O2 /Ob1 /Zi /DNDEBUG")
